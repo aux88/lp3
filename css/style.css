@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+---------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  /* 画面幅を変更した際に画像が伸縮する設定 */
+
+  /* 画像の原寸サイズ以上の大きさにはならない */
+
+  /* 原寸サイズ以上で表示したい場合は、width: 100%;にする。画像がぼやけるので注意 */
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+
+  /* リスト先頭の記号を表示しないときに指定します */
+}
+
+/* 部品
+------------------------------------- */
+
+.contents-width {
+  max-width: 1032px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .contents-width {
+    padding: 0 calc(16/390 *100vw);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marcellus {
+  font-family: Marcellus, serif;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+}
+
+/* ヘッダー
+------------------------------------------ */
+
+
+
+/* セクション
+------------------------------------------ */
+
+
+
+/* フッター
+------------------------------------------ */
