@@ -68,12 +68,33 @@ li {
   justify-content: center;
 }
 
-.marcellus {
-  font-family: Marcellus, serif;
+
+.noto-sans-jp-regular {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
-.eb-garamond {
-  font-family: "EB Garamond", serif;
+.noto-sans-jp-semi-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-optical-sizing: auto;
+}
+
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+
+.outfit-regular {
+  font-family: Outfit, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 /* ヘッダー
