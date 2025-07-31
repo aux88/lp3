@@ -48,24 +48,13 @@ li {
 /* 部品
 ------------------------------------- */
 
-.contents-width {
-  max-width: 1032px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .contents-width {
-    padding: 0 calc(16/390 *100vw);
+    width: 100%;
+    max-width: 1062px;
+    margin: 0 auto;
   }
 }
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .noto-sans-jp-regular {
   font-family: "Noto Sans JP", sans-serif;
@@ -195,9 +184,8 @@ li {
 ------------------------------------------ */
 .header {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 60px;
   margin-right: 10px;
   margin-left: 12px;
@@ -206,7 +194,22 @@ li {
 
 @media (min-width: 768px) {
   .header {
-    height: 95px;
+    height: 90px;
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    padding-right: 20px;
+    padding-left: 16px;
   }
 }
 
@@ -223,6 +226,12 @@ li {
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .header__logo-image {
+    width: 97px;
+  }
+}
+
 .header__button-group {
   display: flex;
   flex-direction: row;
@@ -236,7 +245,6 @@ li {
   }
 }
 
-
 /* ボタン */
 .header__button {
   position: relative;
@@ -244,6 +252,7 @@ li {
   align-items: center;
   justify-content: center;
   height: 31px;
+  padding-right: 8px;
   margin: 0 auto;
   font-size: 12px;
   line-height: calc(40/12);
@@ -256,7 +265,9 @@ li {
 @media (min-width: 768px) {
   .header__button {
     height: 50.36px;
+    padding-right: 14px;
     font-size: 21.12px;
+    letter-spacing: 0;
     border-radius: 25.18px;
   }
 }
@@ -277,7 +288,7 @@ li {
 
 @media (min-width: 768px) {
   .header__button::after {
-    right: 10px;
+    right: 17px;
     width: 11px;
     height: 18px;
   }
@@ -285,15 +296,30 @@ li {
 
 .header__contact-button {
   width: 107px;
-  padding-right: 8px;
-  letter-spacing: 0.4px;
   background-color: #fa7da3;
+}
+
+@media (min-width: 768px) {
+  .header__contact-button {
+    width: 189.1px;
+  }
 }
 
 .header__reservation-button {
   width: 173.77px;
-  padding-right: 4px;
   background-color: #49c43d;
+}
+
+@media (min-width: 768px) {
+  .header__reservation-button {
+    width: 295.49px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__button--smalltext {
+    font-size: 17.87px;
+  }
 }
 
 /* セクション
@@ -303,3 +329,5 @@ li {
 
 /* フッター
 ------------------------------------------ */
+
+}
