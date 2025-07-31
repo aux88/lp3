@@ -134,7 +134,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 80.06px;
   margin: 0 auto;
   font-size: 1.3137rem;
@@ -148,7 +149,7 @@ li {
 
 @media (min-width: 768px) {
   .button {
-    width: 571.02px;
+    max-width: 571.02px;
     height: 130.07px;
     font-size: 2.125rem;
     line-height: calc(45.52/34);
@@ -624,6 +625,7 @@ li {
   .gift {
     padding-top: 46px;
     padding-bottom: 26px;
+    margin-bottom: 58px;
   }
 }
 
@@ -633,11 +635,13 @@ li {
   row-gap: 9px;
   align-items: center;
   justify-content: center;
+  margin: 0 18px;
 }
 
 @media (min-width: 768px) {
   .gift-container {
     row-gap: 17px;
+    margin: 0 auto;
   }
 }
 
@@ -684,11 +688,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 93px;
   margin-top: 5px;
-  background-color: rgb(255 255 255);
-  border-color: rgb(250 125 163);
+  background-color: #fff;
+  border-color: #fa7da3;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
@@ -696,29 +701,33 @@ li {
 
 @media (min-width: 768px) {
   .gift__title {
-    width: 550px;
+    max-width: 550px;
     height: 148px;
     margin-top: 3px;
   }
 }
 
 .gift__course-name {
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 31px;
+  height: 29px;
   font-size: 21px;
   font-weight: 400;
   color: #fff;
   text-align: center;
   background-color: #fa7da3;
+  border-color: #fa7da3;
+  border-style: solid;
+  border-width: 1px;
   border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 768px) {
   .gift__course-name {
-    height: 47px;
+    height: 45px;
     font-size: 32px;
   }
 }
@@ -781,8 +790,17 @@ li {
 }
 
 
+@media (min-width: 768px) {
+  .trial__title {
+    padding-bottom: 18px;
+    padding-left: 8px;
+    font-size: 34px;
+    letter-spacing: 3px;
+  }
+}
+
 .trial__contents-title {
-  width: 350px;
+  max-width: 350px;
   padding: 11px 0;
   margin: 30px auto 0;
   font-size: 17px;
@@ -796,8 +814,20 @@ li {
   border-width: 1px 0;
 }
 
+
+@media (min-width: 768px) {
+  .trial__contents-title {
+    max-width: 571px;
+    padding: 17px 0;
+    margin: 48px auto 0;
+    font-size: 28px;
+    border-width: 2px 0;
+  }
+}
+
+
 .trial__contents-list {
-  width: 350px;
+  max-width: 350px;
   padding-top: 8px;
   padding-left: 2px;
   margin: 0 auto;
@@ -810,11 +840,32 @@ li {
   font-size: 11px;
 }
 
+@media (min-width: 768px) {
+  .trial__contents-list {
+    max-width: 571px;
+    padding-top: 15px;
+    padding-left: 0;
+    font-size: 22.86px;
+    line-height: calc(39.19/22.86);
+    letter-spacing: -.3px;
+  }
+
+  .trial__contents-item--small {
+    font-size: 17.96px;
+  }
+}
+
 /* 選ばれる３つのポイント
 ------------------------------------------ */
 .point {
   margin-top: 37px;
   background-color: #fdf0f5;
+}
+
+@media (min-width: 768px) {
+  .point {
+    margin-top: 53px;
+  }
 }
 
 /* フッター
