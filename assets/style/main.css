@@ -48,6 +48,11 @@ li {
 /* 部品
 ------------------------------------- */
 
+
+.contents-width {
+  height:100%;
+  }
+
 @media (min-width: 768px) {
   .contents-width {
     width: 100%;
@@ -194,7 +199,7 @@ li {
 
 @media (min-width: 768px) {
   .header {
-    height: 90px;
+    height: 91px;
   }
 }
 
@@ -322,12 +327,180 @@ li {
   }
 }
 
-/* セクション
+/* メインビジュアル
 ------------------------------------------ */
 
+.main-visual {
+  position: relative;
+  z-index:-1;
+  height: 315px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #fa7da3;
+}
 
+@media (min-width: 768px) {
+  .main-visual {
+    height: 612px;
+  }
+}
+
+.main-visual-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main-visual-container::after{
+  position: absolute;
+ top: 97px;
+    left: -86px;
+  z-index: -1;
+    width: 390px;
+    height: 83%;
+  content: '';
+  background-image: url("/assets/image/woman.png");
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .main-visual-container {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+.main-visual__title-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: flex-start;
+  padding-top: 16px;
+    padding-left: 18px;
+}
+
+.main-visual__title-main {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .main-visual__title-main {
+    font-size: 122.15px;
+  }
+}
+
+
+.main-visual__title-sub {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .main-visual__title-sub {
+    font-size: 36px;
+  }
+}
+
+.main-visual__campaign-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height:284px;
+}
+
+.main-visual__campaign {
+  display: flex;
+  column-gap: 9px;
+  align-items: center;
+  justify-content: center;
+  width: 188px;
+  height: 107px;
+  background: rgb(255 255 255 / 30%);
+  box-shadow: 3.536px 3.536px 0 0 rgb(0 0 0 / 25%);
+}
+
+@media (min-width: 768px) {
+  .main-visual__campaign {
+    width: 423.02px;
+    height: 222px;
+    box-shadow: 3.536px 3.536px 0 0 rgb(0 0 0 / 25%);
+  }
+}
+
+.main-visual__campaign-term {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  margin-left: 8px;
+}
+
+.main-visual__campaign-term--1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 23px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fa7da3;
+  background-color: #fff;
+}
+
+.main-visual__campaign-term--2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-visual__campaign-price {
+  padding-right: 3px;
+  margin-bottom: 13px;
+  font-size: 76px;
+  font-weight: 700;
+  color: #fffd7a;
+}
+
+.main-visual__campaign-price--small {
+  font-size: 36px;
+}
+
+.main-visual__monthly-fee {
+    padding-bottom: 17px;
+    padding-left: 74px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.main-visual__monthly-fee--small {
+  font-size: 9px;
+}
+
+.main-visual__benefit {
+  display: flex;
+  flex-direction: column;
+  row-gap:12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-visual__benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 133px;
+    height: 35px;
+    padding-bottom: 2px;
+  padding-left: 4px;
+    margin-left: 2px;
+    letter-spacing: 2px;
+  background-color: rgb(102 102 102 / 0%);
+  border-color: rgb(255 255 255);
+  border-style: solid;
+  border-width: 1px;
+}
 
 /* フッター
 ------------------------------------------ */
-
-}
