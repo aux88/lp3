@@ -141,6 +141,7 @@ li {
   line-height: calc(28.02/21.02);
   color: #fff;
   text-align: center;
+  letter-spacing: 2px;
   background-color: #49c43d;
   border-radius: 40px;
 }
@@ -551,6 +552,10 @@ li {
   text-align: right;
 }
 
+.main-visual__monthly-fee--small {
+  font-size: 9px;
+}
+
 
 @media (min-width: 768px) {
   .main-visual__monthly-fee {
@@ -611,6 +616,7 @@ li {
 .gift {
   padding-top: 21px;
   padding-bottom: 16px;
+  margin-bottom: 17px;
   background-color: #fffedd;
 }
 
@@ -692,7 +698,7 @@ li {
   .gift__title {
     width: 550px;
     height: 148px;
-  margin-top: 3px;
+    margin-top: 3px;
   }
 }
 
@@ -735,8 +741,8 @@ li {
 
 @media (min-width: 768px) {
   .gift__contents {
-padding-top: 3px;
-        padding-left: 19px;
+    padding-top: 3px;
+    padding-left: 19px;
     font-size: 43.67px;
   }
 
@@ -754,6 +760,61 @@ padding-top: 3px;
   .gift__detail {
     font-size: 14px;
   }
+}
+
+/* 無料トライアル
+------------------------------------------ */
+.trial {}
+
+.trial__container {
+  margin: 0 18px;
+}
+
+.trial__title {
+  padding-bottom: 11px;
+  padding-left: 8px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #fa7da3;
+  text-align: center;
+  letter-spacing: 2.1px;
+}
+
+
+.trial__contents-title {
+  width: 350px;
+  padding: 11px 0;
+  margin: 30px auto 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  color: #50bfff;
+  text-align: center;
+  letter-spacing: 2px;
+  border-color: #50bfff;
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+.trial__contents-list {
+  width: 350px;
+  padding-top: 8px;
+  padding-left: 2px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24/14);
+}
+
+.trial__contents-item--small {
+  font-size: 11px;
+}
+
+/* 選ばれる３つのポイント
+------------------------------------------ */
+.point {
+  margin-top: 37px;
+  background-color: #fdf0f5;
 }
 
 /* フッター
