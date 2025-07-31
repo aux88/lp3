@@ -185,6 +185,19 @@ li {
   background-color: #40e02f;
 }
 
+
+@media (max-width:767px) {
+  .no-sp {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .no-pc {
+    display: none;
+  }
+}
+
 /* ヘッダー
 ------------------------------------------ */
 .header {
@@ -589,6 +602,157 @@ li {
     margin-left: 2px;
     font-size: 28px;
     letter-spacing: 0;
+  }
+}
+
+/* プレゼント(gift)キャンペーン
+------------------------------------------ */
+
+.gift {
+  padding-top: 21px;
+  padding-bottom: 16px;
+  background-color: #fffedd;
+}
+
+@media (min-width: 768px) {
+  .gift {
+    padding-top: 46px;
+    padding-bottom: 26px;
+  }
+}
+
+.gift-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .gift-container {
+    row-gap: 17px;
+  }
+}
+
+.gift__popup {
+  position: relative;
+  padding: 0 1rem;
+  font-size: 21px;
+  color: #fa7da3;
+}
+
+.gift__popup::before,
+.gift__popup::after {
+  position: absolute;
+  width: 2px;
+  height: 27px;
+  content: '';
+  background-color: #fa7da3;
+}
+
+.gift__popup::before {
+  left: 0;
+  transform: rotate(-30deg);
+}
+
+.gift__popup::after {
+  right: 0;
+  transform: rotate(30deg);
+}
+
+@media (min-width: 768px) {
+  .gift__popup {
+    padding: 0 9px 0 24px;
+    font-size: 34px;
+  }
+
+  .gift__popup::before,
+  .gift__popup::after {
+    width: 4px;
+    height: 43px;
+  }
+}
+
+.gift__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 93px;
+  margin-top: 5px;
+  background-color: rgb(255 255 255);
+  border-color: rgb(250 125 163);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .gift__title {
+    width: 550px;
+    height: 148px;
+  margin-top: 3px;
+  }
+}
+
+.gift__course-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 31px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: #fa7da3;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .gift__course-name {
+    height: 47px;
+    font-size: 32px;
+  }
+}
+
+.gift__contents {
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 13px;
+  font-size: 27px;
+  font-weight: 400;
+  color: #fa7da3;
+  text-align: center;
+}
+
+.gift__contents--amount {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+  .gift__contents {
+padding-top: 3px;
+        padding-left: 19px;
+    font-size: 43.67px;
+  }
+
+  .gift__contents--amount {
+    font-size: 67.93px;
+  }
+
+}
+
+.gift__detail {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .gift__detail {
+    font-size: 14px;
   }
 }
 
