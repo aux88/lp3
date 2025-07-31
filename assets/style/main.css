@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #000;
+  color: #333;
 }
 
 img {
@@ -27,9 +27,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.5;
-}
+a:hover {}
 
 img {
   /* 画面幅を変更した際に画像が伸縮する設定 */
@@ -95,6 +93,102 @@ li {
   font-style: normal;
   font-weight: 400;
   font-optical-sizing: auto;
+}
+
+/* セクションタイトル */
+.section-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fa7da3;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.625rem;
+  }
+}
+
+.section-title::before,
+.section-title::after {
+  display: inline-block;
+  width: 37.31px;
+  height: 46px;
+  content: "";
+  background-image: url("/assets/image/shape_2918.png");
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .section-title::before,
+  .section-title::after {
+    width: 49.59px;
+    height: 61.09px;
+  }
+}
+
+.section-title::before {
+  transform: scale(-1, 1);
+}
+
+/* ボタン */
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 80.06px;
+  margin: 0 auto;
+  font-size: 1.3137rem;
+  line-height: calc(28.02/21.02);
+  color: #fff;
+  text-align: center;
+  background-color: #49c43d;
+  border-radius: 40px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 571.02px;
+    height: 130.07px;
+    font-size: 2.125rem;
+    line-height: calc(45.52/34);
+    border-radius: 65.04px;
+  }
+}
+
+.button::after {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  width: 13px;
+  height: 20px;
+  content: '';
+  background-image: url("/assets/image/button_arrow.png");
+  background-position: center;
+  background-size: contain;
+  transform: translate(0, -50%);
+
+}
+
+@media (min-width: 768px) {
+  .button::after {
+    right: 52px;
+    width: 20px;
+    height: 32px;
+  }
+}
+
+.button-reservation {
+  background-color: #49c43d;
+}
+
+.button-reservation:hover {
+  background-color: #40e02f;
 }
 
 /* ヘッダー
