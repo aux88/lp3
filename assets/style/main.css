@@ -193,8 +193,108 @@ li {
 
 /* ヘッダー
 ------------------------------------------ */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 12px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 95px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-image {
+  width: 72px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header__button-group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .header__button-group {
+    column-gap: 21px;
+  }
+}
 
 
+/* ボタン */
+.header__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 31px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: calc(40/12);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.4px;
+  border-radius: 15.5px;
+}
+
+@media (min-width: 768px) {
+  .header__button {
+    height: 50.36px;
+    font-size: 21.12px;
+    border-radius: 25.18px;
+  }
+}
+
+.header__button::after {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 6px;
+  height: 10px;
+  content: '';
+  background-image: url("/assets/image/button_arrow.png");
+  background-position: center;
+  background-size: contain;
+  transform: translate(0, -50%);
+
+}
+
+@media (min-width: 768px) {
+  .header__button::after {
+    right: 10px;
+    width: 11px;
+    height: 18px;
+  }
+}
+
+.header__contact-button {
+  width: 107px;
+  padding-right: 8px;
+  letter-spacing: 0.4px;
+  background-color: #fa7da3;
+}
+
+.header__reservation-button {
+  width: 173.77px;
+  padding-right: 4px;
+  background-color: #49c43d;
+}
 
 /* セクション
 ------------------------------------------ */
