@@ -872,9 +872,10 @@ li {
 ------------------------------------------ */
 .point {
   padding-top: 35px;
-    padding-bottom: 29px;
+  padding-bottom: 29px;
   margin-top: 37px;
-  background-color: #fdf0f5;
+  margin-bottom: 28px;
+  background-color: #fdf0f5
 }
 
 @media (min-width: 768px) {
@@ -1101,9 +1102,9 @@ li {
 }
 
 @media (min-width: 768px) {
-.point__plan {
-  padding-bottom: 35px;
-}
+  .point__plan {
+    padding-bottom: 35px;
+  }
 }
 
 .point__plan-title {
@@ -1177,6 +1178,113 @@ li {
   color: #fa7da3;
   text-align: center;
 }
+
+
+/* 選べる２つのコース
+------------------------------------------ */
+.course {
+  padding-top: 9px;
+  padding-bottom: 29px;
+  margin-top: 37px;
+  margin-bottom: 28px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .course {
+    padding-top: 53px;
+    padding-bottom: 61px;
+    margin-top: 53px;
+  }
+}
+
+.course__container {
+  margin-right: 19px;
+  margin-left: 21px;
+}
+
+.course__pre-title {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  margin: 0 auto 9px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4d2b1b;
+  text-align: center;
+}
+
+.course .section-title::before {
+  margin-right: 5px;
+}
+
+.course .section-title::after {
+  margin-left: 6px;
+}
+
+.course__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 23px;
+}
+
+.course__title {
+  height: 45.91px;
+  color: #fa7da3;
+  background-color: #fdf0f5;
+  border: none;
+}
+
+.course__contents {
+  padding: 0 20px 20px;
+}
+
+.course__description {
+  margin: 13px 0;
+  font-size: 14px;
+  line-height: calc(21/14);
+  color: #333;
+
+}
+
+.course__image {
+  width: 100%;
+
+  /* トリミング枠の幅 */
+  aspect-ratio: 310 / 206.99;
+
+  /* トリミング枠の縦横比 */
+  overflow: hidden;
+}
+
+@media(min-width: 768px) {
+  .course__image {
+    aspect-ratio: 310.17 / 206.95;
+  }
+
+}
+
+.course__image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.course__list-item:nth-of-type(1) img {
+  height: 273%;
+  object-position: -6px -216px;
+}
+
+.course__list-item:nth-of-type(2) img {
+    height: 104%;
+    object-position: -4px -3px;
+}
+
+
 
 
 /* フッター
