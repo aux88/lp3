@@ -5,15 +5,13 @@ const mySwiper = new Swiper('.swiper', {
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
   breakpoints: {
     // when window width is >= 768px
     768: {
       slidesPerView: 3, // 768px以上の場合の表示数
+      slidesPerGroup: 2,
     },
-  },
-  autoplay: { //自動再生の設定
-    delay: 3000,
-    disableOnInteraction: false,
   },
 });
