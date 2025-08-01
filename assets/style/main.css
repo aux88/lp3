@@ -96,6 +96,7 @@ li {
   font-size: 2rem;
   color: #fa7da3;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
@@ -870,7 +871,8 @@ li {
 /* 選ばれる３つのポイント
 ------------------------------------------ */
 .point {
-  padding-top: 40px;
+  padding-top: 35px;
+    padding-bottom: 29px;
   margin-top: 37px;
   background-color: #fdf0f5;
 }
@@ -904,6 +906,16 @@ li {
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .point__pre-title {
+    margin-bottom: 10px;
+  }
+
+  .point__kbl-logo-image {
+    margin-top: 4px;
+  }
+}
+
 @media (min-width: 768px) {
   .point__pre-title {
     column-gap: 6px;
@@ -925,9 +937,10 @@ li {
 .point__list {
   display: flex;
   flex-direction: column;
-  row-gap: 26px;
+  row-gap: 32px;
   align-items: center;
   justify-content: center;
+  margin-top: 23px;
 }
 
 @media (min-width: 768px) {
@@ -950,7 +963,7 @@ li {
 
 
 .point__title {
-  height: 45.96px;
+  height: 41.96px;
   font-size: 18.02px;
   font-weight: 400;
 }
@@ -965,9 +978,7 @@ li {
 
 
 .point__contents {
-  padding-top: 2px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding: 15px 10px 18px;
   font-size: 27px;
   font-weight: 400;
   text-align: center;
@@ -986,7 +997,8 @@ li {
 }
 
 .point__description {
-  margin: 0 9px;
+  margin-right: 8px;
+  margin-left: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: calc(21/14);
@@ -994,25 +1006,33 @@ li {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .point__item:first-of-type .point__contents .point__description {
+    letter-spacing: -0.6px;
+  }
+}
+
+
 @media (min-width: 768px) {
   .point__description {
     margin: 0;
     font-size: 21px;
     line-height: calc(33.87/21);
+    letter-spacing: 0;
   }
 }
 
 .point__salon-compare {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 24px;
+  column-gap: 21px;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 @media (min-width: 768px) {
   .point__salon-compare {
     column-gap: 41px;
-    justify-content: center;
     margin-top: 24px;
     margin-bottom: 19px;
   }
@@ -1023,8 +1043,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 147px;
-  height: 89px;
+  width: 143px;
+  height: 85px;
   font-size: 18px;
   color: #433e3f;
   border-style: solid;
@@ -1044,15 +1064,15 @@ li {
   border-color: #fa7da3;
 }
 
-@media (min-width: 768px) {
-  .point__salon--kbl-logo {
-    width: 71px;
-    height: auto;
-  }
+.point__salon--kbl-logo {
+  width: 71px;
 }
 
-.point__salon--kbl-logo {
-  width: 115px;
+@media (min-width: 768px) {
+  .point__salon--kbl-logo {
+    width: 115px;
+    height: auto;
+  }
 }
 
 .point__salon--a {
@@ -1061,13 +1081,14 @@ li {
 }
 
 .point__salon-description {
-  margin-top: 12px;
+  margin-top: 7px;
   font-size: 14px;
   color: #333;
 }
 
 @media (min-width: 768px) {
   .point__salon-description {
+    margin-top: 12px;
     font-size: 21px;
   }
 }
@@ -1076,11 +1097,18 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+.point__plan {
   padding-bottom: 35px;
+}
 }
 
 .point__plan-title {
-  margin-top: 5px;
+  margin-top: 6px;
+  margin-bottom: 27px;
   font-size: 23px;
   color: #4d2c1c;
 }
@@ -1096,12 +1124,18 @@ li {
 .point__body-plan-image {
   width: 311px;
   height: auto;
+  margin-left: 3px;
 }
 
 @media (min-width: 768px) {
   .point__body-plan-image {
     width: 533px;
+    margin-left: 0;
   }
+}
+
+.point__body-plan {
+  margin-bottom: 38px;
 }
 
 @media (min-width: 768px) {
@@ -1110,26 +1144,27 @@ li {
   }
 }
 
-.point_parts-plan {
+.point__parts-plan {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 12px;
-  margin-top: 5px;
+  gap: 18px 12px;
+  justify-content: center;
+  margin-top: 2px;
 }
 
 @media (min-width: 768px) {
-  .point_parts-plan {
+  .point__parts-plan {
     margin-top: 5px;
   }
 }
 
-.point_parts-plan-group {
+.point__parts-plan-group {
   display: flex;
   flex-flow: row nowrap;
   column-gap: 12px;
 }
 
-.point_parts-plan-image {
+.point__parts-plan-image {
   width: 100px;
   height: auto;
 }
