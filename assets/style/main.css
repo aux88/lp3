@@ -1266,8 +1266,8 @@ li {
 
 .course__title {
   height: 45.91px;
-    font-size:18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
   color: #fa7da3;
   background-color: #fdf0f5;
   border: none;
@@ -1293,12 +1293,12 @@ li {
 
 @media (min-width: 768px) {
   .course__description {
-margin: 8px 0 14px;
-  font-size: 18px;
-  line-height: calc(28/18);
-  color: #333;
-  line-break: anywhere;
-}
+    margin: 8px 0 14px;
+    font-size: 18px;
+    line-height: calc(28/18);
+    color: #333;
+    line-break: anywhere;
+  }
 }
 
 .course__image {
@@ -1335,8 +1335,85 @@ margin: 8px 0 14px;
   object-position: -4px -3px;
 }
 
+/* お客様の声
+------------------------------------------ */
+.voice {
+  padding-top: 27px;
+  background-color: #fdf0f5;
+}
+
+@media(min-width: 768px) {
+  .voice {
+    padding-top: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .voice .section-title::before {
+    margin-right: 21px;
+  }
+
+  .voice .section-title::after {
+    margin-left: 21px;
+  }
+}
 
 
+@media (min-width: 768px) {
+  .voice__container {
+    max-width: 991px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+.swiper-area {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .swiper-area {
+    margin-top: 36px;
+  }
+}
+
+.voice__item {
+  width: 308px;
+  margin: 0 auto;
+}
+
+.voice__title {
+  height: 42.95px;
+  font-size: 18.01px;
+  font-weight: 400;
+}
+
+.voice__contents {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.voice__image-container {
+  width: 86px;
+  aspect-ratio: 86 / 114;
+  overflow: hidden;
+}
+
+.voice__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.voice__imag {
+  height: 273%;
+  object-position: -6px -216px;
+}
 
 /* フッター
 ------------------------------------------ */
