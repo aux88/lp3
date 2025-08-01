@@ -27,8 +27,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {}
-
 img {
   /* 画面幅を変更した際に画像が伸縮する設定 */
 
@@ -93,6 +91,7 @@ li {
 .section-title {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   justify-content: center;
   font-size: 2rem;
   color: #fa7da3;
@@ -122,6 +121,15 @@ li {
     width: 49.59px;
     height: 61.09px;
   }
+
+  .section-title::before {
+    margin-right: 7px;
+  }
+
+  .section-title::after {
+    margin-left: 7px;
+  }
+
 }
 
 .section-title::before {
@@ -198,6 +206,34 @@ li {
   .no-pc {
     display: none;
   }
+}
+
+/* ピンクの枠線の角丸アイテムの共通部分 */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-color: #fa7da3;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.item__title {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #fa7da3;
+  border-color: #fa7da3;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* ヘッダー
@@ -684,23 +720,15 @@ li {
   }
 }
 
-.gift__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.gift__item {
   width: 100%;
   max-width: 350px;
   height: 93px;
   margin-top: 5px;
-  background-color: #fff;
-  border-color: #fa7da3;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
-  .gift__title {
+  .gift__item {
     max-width: 550px;
     height: 148px;
     margin-top: 3px;
@@ -708,21 +736,9 @@ li {
 }
 
 .gift__course-name {
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   height: 29px;
   font-size: 21px;
   font-weight: 400;
-  color: #fff;
-  text-align: center;
-  background-color: #fa7da3;
-  border-color: #fa7da3;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -733,12 +749,10 @@ li {
 }
 
 .gift__contents {
-  width: 100%;
   padding-top: 2px;
   padding-left: 13px;
   font-size: 27px;
   font-weight: 400;
-  color: #fa7da3;
   text-align: center;
 }
 
@@ -773,8 +787,6 @@ li {
 
 /* 無料トライアル
 ------------------------------------------ */
-.trial {}
-
 .trial__container {
   margin: 0 18px;
 }
@@ -858,15 +870,279 @@ li {
 /* 選ばれる３つのポイント
 ------------------------------------------ */
 .point {
+  padding-top: 40px;
   margin-top: 37px;
   background-color: #fdf0f5;
 }
 
 @media (min-width: 768px) {
   .point {
+    padding-top: 53px;
+    padding-bottom: 61px;
     margin-top: 53px;
   }
 }
+
+.point__container {
+  margin: 0 16px;
+}
+
+.point__pre-title {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4d2b1b;
+  text-align: center;
+}
+
+.point__kbl-logo-image {
+  width: 197px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .point__pre-title {
+    column-gap: 6px;
+    margin-bottom: 13px;
+    font-size: 18.07px;
+  }
+
+  .point__kbl-logo-image {
+    width: 263px;
+  }
+}
+
+
+.item__contents {
+  width: 100%;
+  color: #fa7da3;
+}
+
+.point__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .point__list {
+    row-gap: 50px;
+    margin-top: 48px;
+  }
+}
+
+.point__item {
+  width: 100%;
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .point__item {
+    max-width: 780.02px;
+  }
+}
+
+
+.point__title {
+  height: 45.96px;
+  font-size: 18.02px;
+  font-weight: 400;
+}
+
+
+@media (min-width: 768px) {
+  .point__title {
+    height: 72px;
+    font-size: 28px;
+  }
+}
+
+
+.point__contents {
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .point__contents {
+    padding: 21px 40px;
+    font-size: 43.67px;
+  }
+
+  .point__item:last-of-type .point__contents {
+    padding-bottom: 30px;
+  }
+}
+
+.point__description {
+  margin: 0 9px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(21/14);
+  color: #333;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .point__description {
+    margin: 0;
+    font-size: 21px;
+    line-height: calc(33.87/21);
+  }
+}
+
+.point__salon-compare {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .point__salon-compare {
+    column-gap: 41px;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 19px;
+  }
+}
+
+.point__salon--kbl,
+.point__salon--a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 147px;
+  height: 89px;
+  font-size: 18px;
+  color: #433e3f;
+  border-style: solid;
+  border-width: 1px;
+}
+
+@media (min-width: 768px) {
+  .point__salon--kbl,
+  .point__salon--a {
+    width: 232px;
+    height: 137px;
+    font-size: 29.03px;
+  }
+}
+
+.point__salon--kbl {
+  border-color: #fa7da3;
+}
+
+@media (min-width: 768px) {
+  .point__salon--kbl-logo {
+    width: 71px;
+    height: auto;
+  }
+}
+
+.point__salon--kbl-logo {
+  width: 115px;
+}
+
+.point__salon--a {
+  background-color: #fdf0f5;
+  border-color: #666;
+}
+
+.point__salon-description {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .point__salon-description {
+    font-size: 21px;
+  }
+}
+
+.point__plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.point__plan-title {
+  margin-top: 5px;
+  font-size: 23px;
+  color: #4d2c1c;
+}
+
+@media (min-width: 768px) {
+  .point__plan-title {
+    margin-top: 5px;
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+}
+
+.point__body-plan-image {
+  width: 311px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .point__body-plan-image {
+    width: 533px;
+  }
+}
+
+@media (min-width: 768px) {
+  .point__body-plan {
+    margin-bottom: 50px;
+  }
+}
+
+.point_parts-plan {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 12px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .point_parts-plan {
+    margin-top: 5px;
+  }
+}
+
+.point_parts-plan-group {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 12px;
+}
+
+.point_parts-plan-image {
+  width: 100px;
+  height: auto;
+}
+
+.point_parts-name {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: calc(18/14);
+  color: #fa7da3;
+  text-align: center;
+}
+
 
 /* フッター
 ------------------------------------------ */
