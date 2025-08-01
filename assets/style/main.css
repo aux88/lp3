@@ -1340,6 +1340,7 @@ li {
 .voice {
   padding-top: 27px;
   padding-bottom: 56px;
+  margin-bottom: 28px;
   background-color: #fdf0f5;
 }
 
@@ -1347,6 +1348,7 @@ li {
   .voice {
     padding-top: 38px;
     padding-bottom: 83px;
+    margin-bottom: 57px;
   }
 }
 
@@ -1472,7 +1474,31 @@ li {
   color: #333;
 }
 
-
-
 /* フッター
 ------------------------------------------ */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin-top: 42px;
+  background-color: #fa7da3;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 128px;
+    margin-top: 67px;
+  }
+}
+
+.footer__logo-image {
+  width: 73px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .footer__logo-image {
+    width: 145px;
+  }
+}
