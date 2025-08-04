@@ -261,10 +261,12 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 390px;
 }
 
 @media (min-width: 768px) {
   .header-container {
+    max-width: 100%;
     padding-right: 20px;
     padding-left: 16px;
   }
@@ -275,6 +277,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 6px;
 }
 
 .header__logo-image {
@@ -292,7 +295,7 @@ li {
 .header__button-group {
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
+  column-gap: min(calc(10/390*100vw), 10px);
   justify-content: flex-end;
 }
 
@@ -311,7 +314,7 @@ li {
   height: 31px;
   padding-right: 8px;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: clamp(9px, calc(12 / 390 * 100vw), 12px);
   line-height: calc(40/12);
   color: #fff;
   text-align: center;
@@ -352,7 +355,7 @@ li {
 }
 
 .header__contact-button {
-  width: 107px;
+  width: min(calc(107/390*100vw), 107px);
   background-color: #fa7da3;
 }
 
@@ -363,7 +366,7 @@ li {
 }
 
 .header__reservation-button {
-  width: 173.77px;
+  width: min(calc(173.77/390*100vw), 173.77px);
   background-color: #49c43d;
 }
 
@@ -405,7 +408,9 @@ li {
   position: relative;
   display: flex;
   justify-content: space-between;
+  max-width: 390px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .main-visual-container::after {
@@ -424,6 +429,7 @@ li {
 @media (min-width: 768px) {
   .main-visual-container {
     column-gap: 8px;
+    max-width: 100%;
     padding-right: 46px;
     padding-left: 16px;
   }
