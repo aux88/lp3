@@ -93,7 +93,7 @@ li {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: min(calc(32/390*100vw), 32px);
   color: #fa7da3;
   text-align: center;
   letter-spacing: 1px;
@@ -101,7 +101,7 @@ li {
 
 @media (min-width: 768px) {
   .section-title {
-    font-size: 2.625rem;
+    font-size: 42px;
   }
 }
 
@@ -147,7 +147,7 @@ li {
   max-width: 350px;
   height: 80.06px;
   margin: 0 auto;
-  font-size: 1.3137rem;
+  font-size: min(calc(21/390*100vw), 21px);
   line-height: calc(28.02/21.02);
   color: #fff;
   text-align: center;
@@ -459,7 +459,7 @@ li {
 }
 
 .main-visual__title-main {
-  font-size: 42px;
+  font-size: min(calc(42 / 390 * 100vw), 42px);
   font-weight: 400;
 }
 
@@ -505,7 +505,7 @@ li {
   column-gap: 9px;
   align-items: center;
   justify-content: center;
-  width: 188px;
+  width: min(calc(188 / 390 * 100vw), 188px);
   height: 107px;
   background: rgb(255 255 255 / 30%);
   box-shadow: 3.536px 3.536px 0 0 rgb(0 0 0 / 25%);
@@ -899,7 +899,8 @@ li {
 
 .point__pre-title {
   display: flex;
-  column-gap: 6px;
+  flex-wrap: wrap;
+  gap: 6px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -1051,8 +1052,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 143px;
-  height: 85px;
+  width: min(calc(143/390*100vw), 143px);
+  height: min(calc(85/390*100vw), 85px);
   font-size: 18px;
   color: #433e3f;
   border-style: solid;
@@ -1130,7 +1131,7 @@ li {
 }
 
 .point__body-plan-image {
-  width: 311px;
+  width: min(calc(311/390*100vw), 311px);
   height: auto;
   margin-left: 3px;
 }
@@ -1155,7 +1156,7 @@ li {
 
 .point__body-plan-text {
   position: absolute;
-  font-size: 12px;
+  font-size: min(calc(12/390*100vw), 12px);
   font-weight: 400;
   line-height: calc(18/12);
   color: #333;
@@ -1163,43 +1164,43 @@ li {
 }
 
 .point__body-plan-text1 {
-  top: -4px;
-  left: 115px;
+  top: -1.2%;
+  left: 36.6%;
 }
 
 .point__body-plan-text2 {
-  top: 103px;
-  left: 133px;
+  top: 29.3%;
+  left: 42.3%;
 }
 
 .point__body-plan-text3 {
-  top: 140px;
-  left: 139px;
+  top: 39.6%;
+  left: 44%;
 }
 
 .point__body-plan-text4 {
-  top: 212px;
-  left: 136px;
+  top: 60%;
+  left: 43%;
 }
 
 .point__body-plan-text5 {
-  top: 283px;
-  left: 139px;
+  top: 80.2%;
+  left: 44%;
 }
 
 .point__body-plan-text6 {
-  top: 39px;
-  right: 7px;
+    top: 11%;
+    right: 2.5%;
 }
 
 .point__body-plan-text7 {
-  top: 86px;
-  right: 5px;
+top: 24.2%;
+    right: 1.5%;
 }
 
 .point__body-plan-text8 {
-  top: 207px;
-  right: -1px;
+    top: 58.5%;
+    right: -0.3%;
 }
 
 @media (min-width: 768px) {
@@ -1604,4 +1605,5 @@ li {
   .footer__logo-image {
     width: 145px;
   }
+}
 }
