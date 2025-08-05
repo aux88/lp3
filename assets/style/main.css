@@ -422,7 +422,7 @@ li {
 @media (min-width: 768px) {
     .main-visual__title-main {
         padding-right: 33px;
-        font-size: 122.15px;
+        font-size: min(calc(122.15 / 1062 * 100vw), 122.15px);
     }
 }
 
@@ -470,7 +470,7 @@ li {
 @media (min-width: 768px) {
     .main-visual__campaign {
         column-gap: 21px;
-        width: 423.02px;
+        width: min(calc(423.02/1062*100vw),423.02px);
         height: 222px;
         box-shadow: 3.536px 3.536px 0 0 rgb(0 0 0 / 25%);
     }
@@ -509,14 +509,14 @@ li {
 
 @media (min-width: 768px) {
     .main-visual__campaign-term--limited {
-        width: 105.76px;
+        width: min(calc(105.76/1062*100vw),105.76px);
         height: 51.65px;
-        font-size: 29.25px;
+        font-size: min(calc(29.25/1062*100vw),29.25px);
 
     }
 
     .main-visual__campaign-term--first-month {
-        font-size: 54px;
+        font-size: min(calc(54/1062*100vw),54px);
 
     }
 }
@@ -537,11 +537,11 @@ li {
     .main-visual__campaign-price {
         padding-right: 3px;
         margin-bottom: 30px;
-        font-size: 171px;
+        font-size: min(calc(171/1062*100vw),171px);
     }
 
     .main-visual__campaign-price--small {
-        font-size: 81px;
+        font-size: min(calc(81/1062*100vw),81px);
     }
 }
 
@@ -595,12 +595,12 @@ li {
 }
 
 @media (min-width: 768px) {
-    .main-visual__benefit {
+    .main-visual__benefit-list {
         row-gap: 20px;
     }
 
     .main-visual__benefit-item {
-        width: 425px;
+        width: min(calc(425/1062*100vw),425px);
         height: 69px;
         padding-bottom: 2px;
         padding-left: 4px;
