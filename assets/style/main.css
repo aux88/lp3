@@ -55,7 +55,7 @@ li {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    font-size: min(calc(32/390*100vw), 32px);
+    font-size: min(calc(32/390*100vw), 2rem);
     font-weight: 700;
     color: #fa7da3;
     text-align: center;
@@ -64,15 +64,15 @@ li {
 
 @media (min-width: 768px) {
     .section-title {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 }
 
 .section-title::before,
 .section-title::after {
     display: inline-block;
-    width: 37.31px;
-    height: 46px;
+    width: 2.3319rem;
+    height: 2.875rem;
     content: "";
     background-image: url("/assets/image/shape_2918.png");
     background-position: center;
@@ -82,16 +82,16 @@ li {
 @media (min-width: 768px) {
     .section-title::before,
     .section-title::after {
-        width: 49.59px;
-        height: 61.09px;
+        width: 3.0994rem;
+        height: 3.8181rem;
     }
 
     .section-title::before {
-        margin-right: 5px;
+        margin-right: 0.3125rem;
     }
 
     .section-title::after {
-        margin-left: 2px;
+        margin-left: 0.125rem;
     }
 
 }
@@ -110,11 +110,11 @@ li {
     max-width: 350px;
     height: 80.06px;
     margin: 0 auto;
-    font-size: min(calc(21/390*100vw), 21px);
+    font-size: min(calc(21/390*100vw), 1.3125rem);
     line-height: calc(28.02/21.02);
     color: #fff;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     background-color: #49c43d;
     border-radius: 40px;
 }
@@ -200,7 +200,7 @@ li {
 ------------------------------------------ */
 .header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -592,7 +592,7 @@ li {
     padding-bottom: 2px;
     padding-left: 4px;
     margin-left: 2px;
-    letter-spacing: 2px;
+    font-size: 18px;
     background-color: rgb(102 102 102 / 0%);
     border-color: rgb(255 255 255);
     border-style: solid;
@@ -611,7 +611,6 @@ li {
         padding-left: 4px;
         margin-left: 2px;
         font-size: 28px;
-        letter-spacing: 0;
     }
 }
 
@@ -652,7 +651,7 @@ li {
 .gift__popup {
     position: relative;
     padding: 0 1rem;
-    font-size: 21px;
+    font-size: 1.3125rem;
     color: #fa7da3;
 }
 
@@ -660,7 +659,7 @@ li {
 .gift__popup::after {
     position: absolute;
     width: 2px;
-    height: 27px;
+    height: 1.6875rem;
     content: '';
     background-color: #fa7da3;
 }
@@ -678,55 +677,55 @@ li {
 @media (min-width: 768px) {
     .gift__popup {
         padding: 0 9px 0 24px;
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 
     .gift__popup::before,
     .gift__popup::after {
         width: 4px;
-        height: 43px;
+        height: 2.6875rem;
     }
 }
 
 .gift__item {
     width: 100%;
     max-width: 350px;
-    height: 93px;
+    height: 5.8125rem;
     margin-top: 5px;
 }
 
 @media (min-width: 768px) {
     .gift__item {
         max-width: 550px;
-        height: 148px;
+        height: 9.25rem;
         margin-top: 3px;
     }
 }
 
 .gift__course-name {
-    height: 29px;
-    font-size: 21px;
+    height: 1.8125rem;
+    font-size: 1.3125rem;
     font-weight: 400;
 }
 
 @media (min-width: 768px) {
     .gift__course-name {
         justify-content: flex-start;
-        height: 45px;
-        font-size: 32px;
+        height: 2.8125rem;
+        font-size: 2rem;
     }
 }
 
 .gift__contents {
     padding-top: 2px;
     padding-left: 13px;
-    font-size: 27px;
+    font-size: 1.6875rem;
     font-weight: 400;
     text-align: center;
 }
 
 .gift__contents--amount {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
 }
 
@@ -734,21 +733,21 @@ li {
     .gift__contents {
         padding-top: 3px;
         padding-left: 19px;
-        font-size: 43.67px;
+        font-size: 2.7294rem;
     }
 
     .gift__contents--amount {
-        font-size: 67.93px;
+        font-size: 4.2456rem;
     }
 }
 
 .gift__detail {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 @media (min-width: 768px) {
     .gift__detail {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 
@@ -761,11 +760,11 @@ li {
 .trial__title {
     padding-bottom: 11px;
     padding-left: 8px;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 600;
     color: #fa7da3;
     text-align: center;
-    letter-spacing: 2.1px;
+    letter-spacing: 0.1313rem;
 }
 
 
@@ -773,8 +772,8 @@ li {
     .trial__title {
         padding-bottom: 18px;
         padding-left: 8px;
-        font-size: 34px;
-        letter-spacing: 3px;
+        font-size: 2.125rem;
+        letter-spacing: 0.1875rem;
     }
 }
 
@@ -782,12 +781,12 @@ li {
     max-width: 350px;
     padding: 11px 0;
     margin: 30px auto 0;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 600;
     line-height: 1;
     color: #50bfff;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     border-color: #50bfff;
     border-style: solid;
     border-width: 1px 0;
@@ -798,7 +797,7 @@ li {
         max-width: 571px;
         padding: 17px 0;
         margin: 48px auto 0;
-        font-size: 28px;
+        font-size: 1.75rem;
         border-width: 2px 0;
     }
 }
@@ -811,13 +810,13 @@ li {
 }
 
 .trial__contents-item {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: calc(24/14);
 }
 
 .trial__contents-item--small {
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 @media (min-width: 768px) {
@@ -828,13 +827,13 @@ li {
     }
 
     .trial__contents-item {
-        font-size: 22.86px;
+        font-size: 1.4287rem;
         line-height: calc(39.19/22.86);
         letter-spacing: -.3px;
     }
 
     .trial__contents-item--small {
-        font-size: 17.96px;
+        font-size: 1.1225rem;
     }
 }
 
@@ -883,14 +882,14 @@ li {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     color: #4d2b1b;
     text-align: center;
 }
 
 .point__kbl-logo-image {
-    width: 197px;
+    width: 12.3125rem;
     height: auto;
 }
 
@@ -908,11 +907,11 @@ li {
     .point__pre-title {
         column-gap: 6px;
         margin-bottom: 13px;
-        font-size: 18.07px;
+        font-size: 1.1294rem;
     }
 
     .point__kbl-logo-image {
-        width: 263px;
+        width: 16.4375rem;
     }
 }
 
@@ -944,21 +943,21 @@ li {
 }
 
 .point__title {
-    height: 41.96px;
-    font-size: 18.02px;
+    height: 2.6225rem;
+    font-size: 1.1262rem;
     font-weight: 400;
 }
 
 @media (min-width: 768px) {
     .point__title {
-        height: 72px;
-        font-size: 28px;
+        height: 4.5rem;
+        font-size: 1.75rem;
     }
 }
 
 .point__contents {
     padding: 15px 10px 18px;
-    font-size: 27px;
+    font-size: 1.6875rem;
     font-weight: 400;
     text-align: center;
 }
@@ -966,7 +965,7 @@ li {
 @media (min-width: 768px) {
     .point__contents {
         padding: 21px 40px;
-        font-size: 43.67px;
+        font-size: 2.7294rem;
     }
 
     .point__item:last-of-type .point__contents {
@@ -977,7 +976,7 @@ li {
 .point__description {
     margin-right: 8px;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: calc(21/14);
     color: #333;
@@ -993,7 +992,7 @@ li {
 @media (min-width: 768px) {
     .point__description {
         margin: 0;
-        font-size: 21px;
+        font-size: 1.3125rem;
         line-height: calc(33.87/21);
         letter-spacing: 0;
     }
@@ -1022,7 +1021,7 @@ li {
     justify-content: center;
     width: min(calc(143/390*100vw), 143px);
     height: min(calc(85/390*100vw), 85px);
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #433e3f;
     border-style: solid;
     border-width: 1px;
@@ -1033,7 +1032,7 @@ li {
     .point__salon-a {
         width: 232px;
         height: 137px;
-        font-size: 29.03px;
+        font-size: 1.8144rem;
     }
 }
 
@@ -1042,12 +1041,12 @@ li {
 }
 
 .point__kbl-logo {
-    width: 71px;
+    width: 4.4375rem;
 }
 
 @media (min-width: 768px) {
     .point__kbl-logo {
-        width: 115px;
+        width: 7.1875rem;
         height: auto;
     }
 }
@@ -1059,14 +1058,14 @@ li {
 
 .point__salon-description {
     margin-top: 7px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333;
 }
 
 @media (min-width: 768px) {
     .point__salon-description {
         margin-top: 12px;
-        font-size: 21px;
+        font-size: 1.3125rem;
     }
 }
 
@@ -1086,7 +1085,7 @@ li {
 .point__plan-title {
     margin-top: 6px;
     margin-bottom: 27px;
-    font-size: 23px;
+    font-size: 1.4375rem;
     color: #4d2c1c;
 }
 
@@ -1094,7 +1093,7 @@ li {
     .point__plan-title {
         margin-top: 5px;
         margin-bottom: 22px;
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
@@ -1124,7 +1123,7 @@ li {
 
 .point__body-plan-text {
     position: absolute;
-    font-size: min(calc(12/390*100vw), 12px);
+    font-size: min(calc(12/390*100vw), 0.75rem);
     font-weight: 400;
     line-height: calc(18/12);
     color: #333;
@@ -1173,7 +1172,7 @@ li {
 
 @media (min-width: 768px) {
     .point__body-plan-text {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: calc(24/16);
     }
 
@@ -1289,7 +1288,7 @@ li {
     justify-content: center;
     padding-left: 4px;
     margin: 0 auto 9px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     color: #333;
     text-align: center;
@@ -1306,7 +1305,7 @@ li {
 @media (min-width: 768px) {
     .course__pre-title {
         margin-bottom: 12px;
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .course .section-title::before {
@@ -1337,8 +1336,8 @@ li {
 }
 
 .course__title {
-    height: 45.91px;
-    font-size: 18px;
+    height: 2.8694rem;
+    font-size: 1.125rem;
     font-weight: 400;
     color: #fa7da3;
     background-color: #fdf0f5;
@@ -1347,8 +1346,8 @@ li {
 
 @media (min-width: 768px) {
     .course__title {
-        height: 60px;
-        font-size: 28px;
+        height: 3.75rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -1358,7 +1357,7 @@ li {
 
 .course__description {
     margin: 13px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: calc(21/14);
     color: #333;
 }
@@ -1366,7 +1365,7 @@ li {
 @media (min-width: 768px) {
     .course__description {
         margin: 8px 0 14px;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: calc(28/18);
         color: #333;
         line-break: anywhere;
@@ -1478,8 +1477,8 @@ li {
 }
 
 .voice__item-title {
-    height: 42.95px;
-    font-size: 18.01px;
+    height: 2.6844rem;
+    font-size: 1.1256rem;
     font-weight: 400;
 }
 
@@ -1560,11 +1559,11 @@ li {
 .voice__name {
     margin-top: 4px;
     margin-bottom: 7px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .voice__comment {
-    font-size: 14.01px;
+    font-size: 0.8756rem;
     line-height: calc(21.01/14.01);
     color: #333;
 }
