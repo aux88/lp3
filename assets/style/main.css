@@ -87,11 +87,11 @@ li {
     }
 
     .section-title::before {
-        margin-right: 7px;
+        margin-right: 5px;
     }
 
     .section-title::after {
-        margin-left: 7px;
+        margin-left: 2px;
     }
 
 }
@@ -199,12 +199,15 @@ li {
 /* ヘッダー
 ------------------------------------------ */
 .header {
+    position: fixed;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 60px;
-    margin-right: 10px;
-    margin-left: 12px;
+    padding-right: 10px;
+    padding-left: 12px;
     background-color: #fff;
 }
 
@@ -351,7 +354,8 @@ li {
 .main-visual {
     position: relative;
     z-index: -1;
-    height: 315px;
+    height: 375px;
+    padding-top: 60px;
     overflow: hidden;
     color: #fff;
     background-color: #fa7da3;
@@ -359,7 +363,8 @@ li {
 
 @media (min-width: 768px) {
     .main-visual {
-        height: 612px;
+        height: 703px;
+        padding-top: 91px;
     }
 }
 
@@ -706,6 +711,7 @@ li {
 
 @media (min-width: 768px) {
     .gift__course-name {
+        justify-content: flex-start;
         height: 45px;
         font-size: 32px;
     }
