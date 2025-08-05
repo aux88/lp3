@@ -7,7 +7,6 @@
         <title>全身脱毛今だけ初月0円：KIRAMEKI BEAUTY LABO</title>
         <meta name="description" content="通い放題、追加料金なし、安心サポートのKBL全身脱毛が今だけ初月0円">
 
-        <!-- OGP関連のタグはここに書く -->
         <meta property="og:title" content="全身脱毛今だけ初月0円：KIRAMEKI BEAUTY LABO">
         <meta property="og:description" content="通い放題、追加料金なし、安心サポートのKBL全身脱毛が今だけ初月0円">
         <meta property="og:type" content="article">
@@ -15,26 +14,16 @@
         <meta property="og:site_name" content="KIRAMEKI BEAUTY LABO">
         <meta property="og:locale" content="ja_JP">
 
-        <!-- フォントを読み込む -->
         <!-- Webフォント -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Outfit&display=swap" rel="stylesheet">
-        <!-- アイコンフォント -->
 
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
 
-        <!--ライブラリ 使わないやつは消す -->
-        <!-- Smart Tab -->
-        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
-        <!-- Slick -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
         <!-- Swiper -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
         <link href="/assets/style/main.css" rel="stylesheet">
 
@@ -44,20 +33,20 @@
 
     <body>
         <header class="header flex">
-            <div class="contents-width header-container">
+            <div class="contents-width header__container">
                 <h1>
                     <a href="/" class="header__logo"><img class="header__logo-image" src="/assets/image/header_logo.png" alt="KIRAMEKI BEAUTY LABO"></a>
                 </h1>
                 <div class="header__button-group">
-                    <a href="/#" class="header__button header__contact-button">お問い合わせ</a>
-                    <a href="/#" class="header__button header__reservation-button">カウンセリング予約<span class="header__button--smalltext">(無料)</span></a>
+                    <a href="/contact/" class="header__button header__button--contact">お問い合わせ</a>
+                    <a href="/reservation/" class="header__button header__button--reservation">カウンセリング予約<span class="header__button--smalltext">(無料)</span></a>
                 </div>
             </div>
         </header>
         <main>
             <section class="main-visual">
                 <div class="contents-width">
-                    <div class="main-visual-container">
+                    <div class="main-visual__container">
                         <div class="main-visual__title-block">
                             <h2 class="main-visual__title-main">全身脱毛</h2>
                             <p class="main-visual__title-sub">（顔・VIO込）</p>
@@ -65,13 +54,13 @@
                         <div class="main-visual__campaign-block">
                             <div class="main-visual__campaign">
                                 <div class="main-visual__campaign-term">
-                                    <p class="main-visual__campaign-term--1">今だけ</p>
-                                    <p class="main-visual__campaign-term--2">初月</p>
+                                    <p class="main-visual__campaign-term--limited">今だけ</p>
+                                    <p class="main-visual__campaign-term--first-month">初月</p>
                                 </div>
-                                <div class="main-visual__campaign-price">0<span class="main-visual__campaign-price--small">円</span></div>
+                                <div class="main-visual__campaign-price">0<span class="main-visual__campaign-price main-visual__campaign-price--small">円</span></div>
                             </div>
                             <p class="main-visual__monthly-fee"><span class="outfit-regular">2,480</span><span class="main-visual__monthly-fee--small">円／月</span></p>
-                            <ul class="main-visual__benefit">
+                            <ul class="main-visual__benefit-list">
                                 <li class="main-visual__benefit-item">通い放題</li>
                                 <li class="main-visual__benefit-item">追加料金なし</li>
                                 <li class="main-visual__benefit-item">安心サポート</li>
@@ -81,7 +70,7 @@
                 </div>
             </section>
             <section class="gift">
-                <div class="contents-width gift-container">
+                <div class="contents-width gift__container">
                     <p class="gift__popup">今だけ<span class="no-sp">！</span><span class="no-pc">!</span></p>
                     <div class="item gift__item">
                         <div class="item__title gift__course-name">フェイシャルコース</div>
@@ -94,11 +83,11 @@
                 <div class="contents-width">
                     <div class="trial__container">
                         <h2 class="trial__title">無料体験実施中！</h2>
-                        <a href="/reservation/" class="button button-reservation noto-sans-jp-bold">カウンセリング予約<br>はこちら（無料）</a>
+                        <a href="/reservation/" class="button trial__reservation-button">カウンセリング予約<br>はこちら（無料）</a>
                         <h3 class="trial__contents-title">無料体験内容</h3>
                         <ul class="trial__contents-list">
-                            <li>〈脱毛体験〉V<span class="trial__contents-item--small">(10分)or</span>両脇<span class="trial__contents-item--small">(10分)</span></li>
-                            <li>〈美顔体験〉フェイシャルトリートメント<span class="trial__contents-item--small">(40分コース1回)</span></li>
+                            <li class="trial__contents-item">〈脱毛体験〉V<span class="trial__contents-item trial__contents-item--small">(10分)or</span>両脇<span class="trial__contents-item--small">(10分)</span></li>
+                            <li class="trial__contents-item">〈美顔体験〉フェイシャルトリートメント<span class="trial__contents-item trial__contents-item--small">(40分コース1回)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -116,13 +105,13 @@
                                     <p class="point__description">納得いくまで何度でも、追加料金なく安心して通っていただけます。</p>
                                     <div class="point__salon-compare">
                                         <div class="point__salon">
-                                            <div class="point__salon--kbl">
-                                                <img class="point__salon--kbl-logo" src="/assets/image/header_logo.png" alt="Kirameki Beauty Labo">
+                                            <div class="point__salon-kbl">
+                                                <img class="point__kbl-logo" src="/assets/image/header_logo.png" alt="Kirameki Beauty Labo">
                                             </div>
                                             <p class="point__salon-description">来店1回で全身1回</p>
                                         </div>
                                         <div class="point__salon">
-                                            <div class="point__salon--a">
+                                            <div class="point__salon-a">
                                                 Aサロン
                                             </div>
                                             <p class="point__salon-description">来店3回で全身1回</p>
@@ -139,28 +128,28 @@
                                     <h4 class="point__plan-title">全身プラン</h4>
                                     <div class="point__body-plan">
                                         <img class="point__body-plan-image" src="/assets/image/body_illust.png" alt="">
-                                        <div class="point__body-plan-text point__body-plan-text1">
+                                        <div class="point__body-plan-text point__body-plan-text--1">
                                             おでこ<br>頬<br>フェイスライン<br>鼻下<br>あご
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text2">
+                                        <div class="point__body-plan-text point__body-plan-text--2">
                                             ワキ<br>へそ周り
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text3">
+                                        <div class="point__body-plan-text point__body-plan-text--3">
                                             手指甲
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text4">
+                                        <div class="point__body-plan-text point__body-plan-text--4">
                                             Vライン<br>Iライン<br><br class="no-pc">ヒザ
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text5">
+                                        <div class="point__body-plan-text point__body-plan-text--5">
                                             足指甲
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text6">
+                                        <div class="point__body-plan-text point__body-plan-text--6">
                                             うなじ
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text7">
+                                        <div class="point__body-plan-text point__body-plan-text--7">
                                             背中
                                         </div>
-                                        <div class="point__body-plan-text point__body-plan-text8">
+                                        <div class="point__body-plan-text point__body-plan-text--8">
                                             ヒップ<br>Oライン
                                         </div>
                                     </div>
@@ -169,29 +158,29 @@
                                         <div class="point__parts-plan-group">
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/neck.png" alt="">
-                                                <p class="point_parts-name">うなじ</p>
+                                                <p class="point__parts-name">うなじ</p>
                                             </div>
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/underarm.png" alt="">
-                                                <p class="point_parts-name">ワキ</p>
+                                                <p class="point__parts-name">ワキ</p>
                                             </div>
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/oline.png" alt="">
-                                                <p class="point_parts-name">Oライン</p>
+                                                <p class="point__parts-name">Oライン</p>
                                             </div>
                                         </div>
                                         <div class="point__parts-plan-group">
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/forehead.png" alt="">
-                                                <p class="point_parts-name">おでこ</p>
+                                                <p class="point__parts-name">おでこ</p>
                                             </div>
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/jaw.png" alt="">
-                                                <p class="point_parts-name">あご</p>
+                                                <p class="point__parts-name">あご</p>
                                             </div>
                                             <div>
                                                 <img class="point__parts-plan-image" src="/assets/image/faceline.png" alt="">
-                                                <p class="point_parts-name">フェイスライン</p>
+                                                <p class="point__parts-name">フェイスライン</p>
                                             </div>
                                         </div>
                                     </div>
@@ -212,7 +201,7 @@
                 <div class="contents-width">
                     <div class="trial__container">
                         <h2 class="trial__title">無料体験実施中！</h2>
-                        <a href="/reservation/" class="button button-reservation noto-sans-jp-bold">カウンセリング予約<br>はこちら（無料）</a>
+                        <a href="/reservation/" class="button trial__reservation-button">カウンセリング予約<br>はこちら（無料）</a>
                     </div>
                 </div>
             </section>
@@ -228,7 +217,7 @@
                                     <div class="item__contents course__contents">
                                         <p class="course__description">ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
                                         <figure class="course__image">
-                                            <img src="/assets/image/course_image_01.jpg">
+                                            <img src="/assets/image/course_image_01.jpg" alt="">
                                         </figure>
                                     </div>
                                 </div>
@@ -239,7 +228,7 @@
                                     <div class="item__contents course__contents">
                                         <p class="course__description">確かな技術を持つエステティシャンが、お客様の理想のお肌に近づけます。</p>
                                         <figure class="course__image">
-                                            <img src="/assets/image/course_image_02.jpg">
+                                            <img src="/assets/image/course_image_02.jpg" alt="">
                                         </figure>
                                     </div>
                                 </div>
@@ -256,13 +245,12 @@
                         <div class="swiper-container">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">ボディコース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">ボディコース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--yk" src="/assets/image/voice_03.png">
+                                                    <img class="voice__image voice__image--person-yk" src="/assets/image/voice_03.png" alt="">
                                                 </figure>
                                                     <div class="voice__text">
                                                         <p class="voice__name">20代 Y.Kさま/会社員</p>
@@ -273,10 +261,10 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">フェイシャルコース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">フェイシャルコース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--rb" src="/assets/image/voice_01.png">
+                                                    <img class="voice__image voice__image--person-rb" src="/assets/image/voice_01.png" alt="">
                                                 </figure>
                                                     <div class="voice__text">
                                                         <p class="voice__name">20代 R.Bさま/大学生</p>
@@ -287,10 +275,10 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">脱毛コース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">脱毛コース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--nt" src="/assets/image/voice_02.png">
+                                                    <img class="voice__image voice__image--person-nt" src="/assets/image/voice_02.png" alt="">
                                                 </figure>
                                                 <div class="voice__text">
                                                     <p class="voice__name">30代 N.Tさま/会社員</p>
@@ -301,10 +289,10 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">ボディコース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">ボディコース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--yk" src="/assets/image/voice_03.png">
+                                                    <img class="voice__image voice__image--person-yk" src="/assets/image/voice_03.png" alt="">
                                                 </figure>
                                                     <div class="voice__text">
                                                         <p class="voice__name">20代 Y.Kさま/会社員</p>
@@ -315,10 +303,10 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">フェイシャルコース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">フェイシャルコース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--rb" src="/assets/image/voice_01.png">
+                                                    <img class="voice__image voice__image--person-rb" src="/assets/image/voice_01.png" alt="">
                                                 </figure>
                                                     <div class="voice__text">
                                                         <p class="voice__name">20代 R.Bさま/大学生</p>
@@ -329,10 +317,10 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="item voice__item">
-                                            <h3 class="item__title voice__title">脱毛コース</h3>
-                                            <div class="item__contents voice__contents">
+                                            <h3 class="item__title voice__item-title">脱毛コース</h3>
+                                            <div class="item__contents voice__item-body">
                                                 <figure class="voice__image-container">
-                                                    <img class="voice__image voice__image--nt" src="/assets/image/voice_02.png">
+                                                    <img class="voice__image voice__image--person-nt" src="/assets/image/voice_02.png" alt="">
                                                 </figure>
                                                 <div class="voice__text">
                                                     <p class="voice__name">30代 N.Tさま/会社員</p>
@@ -353,7 +341,7 @@
                 <div class="contents-width">
                     <div class="trial__container">
                         <h2 class="trial__title">無料体験実施中！</h2>
-                        <a href="/reservation/" class="button button-reservation noto-sans-jp-bold">カウンセリング予約<br>はこちら（無料）</a>
+                        <a href="/reservation/" class="button trial__reservation-button">カウンセリング予約<br>はこちら（無料）</a>
                     </div>
                 </div>
             </section>
@@ -365,15 +353,8 @@
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!--ライブラリ 使わないやつは消す -->
-        <!-- Smart Tab -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
-        <!-- Slick -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- waypoints -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script src="/assets/script/main.js"></script>
     </body>
