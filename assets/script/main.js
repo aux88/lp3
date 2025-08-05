@@ -8,9 +8,9 @@ const mySwiper = new Swiper('.swiper', {
         clickable: true,
     },
     breakpoints: {
-        // when window width is >= 768px
+        // 768px以上の時
         768: {
-            slidesPerView: 3, // 768px以上の場合の表示数
+            slidesPerView: 3,
             slidesPerGroup: 2,
         },
     },

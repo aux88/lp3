@@ -31,7 +31,6 @@ li {
 /* 部品
 ------------------------------------- */
 
-
 .contents-width {
     height: 100%;
 }
@@ -190,6 +189,11 @@ li {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px 10px 0 0;
+}
+
+.item__contents {
+    width: 100%;
+    color: #fa7da3;
 }
 
 /* ヘッダー
@@ -425,7 +429,6 @@ li {
     }
 }
 
-
 .main-visual__title-sub {
     margin-top: 3px;
     margin-left: 4px;
@@ -511,12 +514,10 @@ li {
         width: min(calc(105.76/1062*100vw), 105.76px);
         height: 51.65px;
         font-size: min(calc(29.25/1062*100vw), 29.25px);
-
     }
 
     .main-visual__campaign-term--first-month {
         font-size: min(calc(54/1062*100vw), 54px);
-
     }
 }
 
@@ -723,7 +724,6 @@ li {
     font-weight: 600;
 }
 
-
 @media (min-width: 768px) {
     .gift__contents {
         padding-top: 3px;
@@ -734,7 +734,6 @@ li {
     .gift__contents--amount {
         font-size: 67.93px;
     }
-
 }
 
 .gift__detail {
@@ -788,7 +787,6 @@ li {
     border-width: 1px 0;
 }
 
-
 @media (min-width: 768px) {
     .trial__contents-title {
         max-width: 571px;
@@ -798,7 +796,6 @@ li {
         border-width: 2px 0;
     }
 }
-
 
 .trial__contents-list {
     max-width: 350px;
@@ -913,12 +910,6 @@ li {
     }
 }
 
-
-.item__contents {
-    width: 100%;
-    color: #fa7da3;
-}
-
 .point__list {
     display: flex;
     flex-direction: column;
@@ -946,13 +937,11 @@ li {
     }
 }
 
-
 .point__title {
     height: 41.96px;
     font-size: 18.02px;
     font-weight: 400;
 }
-
 
 @media (min-width: 768px) {
     .point__title {
@@ -961,14 +950,12 @@ li {
     }
 }
 
-
 .point__contents {
     padding: 15px 10px 18px;
     font-size: 27px;
     font-weight: 400;
     text-align: center;
 }
-
 
 @media (min-width: 768px) {
     .point__contents {
@@ -996,7 +983,6 @@ li {
         letter-spacing: -0.6px;
     }
 }
-
 
 @media (min-width: 768px) {
     .point__description {
@@ -1260,7 +1246,6 @@ li {
     text-align: center;
 }
 
-
 /* 選べる２つのコース
 ------------------------------------------ */
 .course {
@@ -1396,7 +1381,6 @@ li {
     .course__image {
         aspect-ratio: 310.17 / 206.95;
     }
-
 }
 
 .course__image img {
@@ -1450,7 +1434,6 @@ li {
         margin-left: 21px;
     }
 }
-
 
 @media (min-width: 768px) {
     .voice__container {
