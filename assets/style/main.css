@@ -431,6 +431,9 @@ li {
     .main-visual__title-main {
         padding-right: 33px;
         font-size: min(calc(122.15 / 1062 * 100vw), 122.15px);
+        text-shadow: 0 0 35px #fa7da3,
+            0 0 35px #fa7da3,
+            0 0 35px #fa7da3;
     }
 }
 
@@ -1595,4 +1598,5 @@ li {
     .footer__logo-image {
         width: 145px;
     }
+}
 }
