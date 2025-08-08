@@ -1467,6 +1467,7 @@ li {
 }
 
 .voice__item {
+    box-sizing: border-box;
     width: calc(308 / 390 * 100vw);
     height: 99%;
     margin: 0 auto;
@@ -1480,7 +1481,7 @@ li {
 }
 
 .voice__item-title {
-    height: 2.6844rem;
+    height: 2.7844rem;
     font-size: 1.1256rem;
     font-weight: 400;
 }
@@ -1491,7 +1492,7 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 140px;
+    min-height: 141px;
     padding: 0 18px;
 }
 
